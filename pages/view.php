@@ -27,7 +27,7 @@
 						</td>
 					</tr>
 					
-					<? $res = get_data($conn,"holiday"); foreach($res as $arr) : ?>
+					<? $res = getData($conn,"holiday"); foreach($res as $arr) : ?>
 					<tr>
 						<td>
 							<input type="radio" name="holiday" value="<?=$arr['holiday_id']?>">
@@ -70,7 +70,7 @@
 						</td>
 					</tr>
 					
-					<? $res = get_data($conn,"customer"); foreach($res as $arr) : ?>
+					<? $res = getData($conn,"customer"); foreach($res as $arr) : ?>
 					<tr>
 						<td>
 							<input type="radio" name="customer" value="<?=$arr['customer_id']?>">
@@ -89,7 +89,7 @@
 		</div>
 	</div>
 </div>
-<input type="button" class="btn btn-warning" onClick="javascript:getSelectedValue();" value="Hozzáad">
+<input type="button" class="btn btn-warning" onClick="getSelectedValue()" value="Hozzáad">
 <div class="panel panel-default connection_box">
 	<div class="panel-body">
 		<h2>Kapcsolatok</h2>
@@ -124,7 +124,7 @@
 						</td>
 					</tr>
 			
-				<? $res = get_connection($conn); foreach($res as $arr) : ?>
+				<? $res = getConnection($conn); foreach($res as $arr) : ?>
 				<tr>
 					<td>
 						<input type="radio" name="connection" value="<?=$arr['connection_id']?>">

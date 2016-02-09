@@ -3,7 +3,7 @@
 	if(isset($_GET['holiday']))
 	{
 		$hol_cond = array("holiday_id" => $_GET['holiday']);
-		$res = get_data($conn,"holiday","*",$hol_cond);
+		$res = getData($conn,"holiday","*",$hol_cond);
 	}
 
 ?>

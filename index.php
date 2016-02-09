@@ -1,7 +1,7 @@
 <?php
 	include('include/functions.php');
 	include('include/search.php');
-	$conn = pdo_conn();
+	$conn = pdoConn();
 ?>
 <!DOCTYPE html>
 <html lang="en">

@@ -17,6 +17,6 @@ function getSelectedValue() {
 		
 		if(holidayid == -1 || customerid == -1) return null;
 		
-		window.location.replace("index.php?oldal=connection&new=new&holiday="+holidayid+"&customer="+customerid);
+		window.location.replace("index.php?page=connection&new=new&holiday="+holidayid+"&customer="+customerid);
 		return true;
 	}

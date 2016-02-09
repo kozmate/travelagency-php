@@ -2,7 +2,7 @@
 
 	if(isset($_GET['customer'])) {
 		$cus_cond = array("customer_id" => $_GET['customer']);
-		$res = get_data($conn,"customer","*",$cus_cond);
+		$res = getData($conn,"customer","*",$cus_cond);
 	}
 
 ?>

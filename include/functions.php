@@ -1,6 +1,6 @@
 ﻿<?php
 
-	function pdo_conn()	{
+	function pdoConn()	{
 		$dsn = 'mysql:dbname=travel;host=217.112.131.46';
 		$user = 'travel';
 		$password = 'travel2';
@@ -80,7 +80,7 @@
 		} else return false;
 	}
 	
-	function get_data($conn,$tbl,$array="*",$cond=null) {
+	function getData($conn,$tbl,$array="*",$cond=null) {
 			$sql = "SELECT ";
 			if(is_array($array)) {
 				$i = 0;
@@ -116,7 +116,7 @@
 		return $result;
 	}
 
-	function get_connection($conn,$id=null) {
+	function getConnection($conn,$id=null) {
 		if($id===null) {
 			$sql = "SELECT connection_id, name, email, phone, destination, start_date, end_date FROM `connection` c
 					JOIN customer u ON (c.customer_id=u.customer_id)

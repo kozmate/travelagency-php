@@ -13,7 +13,7 @@
 				else {
 					//Ellenőrzés
 					$cond = array("holiday_id" => $holiday, "customer_id" => $customer);
-					$res = get_data($conn,"connection","connection_id",$cond);
+					$res = getData($conn,"connection","connection_id",$cond);
 					if(!empty($res)) echo "Ez az ügyfél már szerepel a listán. connection_id: ".$res['connection_id'];
 					else {
 						$con_array = array("holiday_id" => $holiday, "customer_id" => $customer);
