@@ -2,8 +2,8 @@
 
 	function pdoConn()	{
 		$dsn = 'mysql:dbname=travel;host=217.112.131.46';
-		$user = 'travel';
-		$password = 'travel2';
+		$user = '';
+		$password = '';
 
 		try {
 			$conn = new PDO($dsn, $user, $password);
